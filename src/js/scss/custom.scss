@@ -604,9 +604,10 @@ ul
         display: block;
 
         width: 22px;
-        height: 2px;
+        height: 2.2px;
 
         border-radius: 1px;
+        background: black;
         +
         {
             .icon-bar
@@ -764,6 +765,10 @@ section.row-build-3
 
     background: url('https://www.paypalobjects.com/webstatic/id_ID/mktg/wright/home/home_n2_1x.jpg');
     background-size: cover;
+    @media (max-width: 767px)
+    {
+        min-height: 0;
+    }
     *
     {
         color: white;
